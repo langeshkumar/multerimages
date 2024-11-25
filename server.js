@@ -1,5 +1,6 @@
 import express from "express"
 import dotenv from "dotenv"
+import multerData from "./lib/database.js";
 dotenv.config();
 
 const app = express();
@@ -11,6 +12,9 @@ const PORT = process.env.SERVER_PORT;
 app.get("/", (req, res) => {
     res.json({ msg: "This is get response..!" });
 });
+
+// database connection 
+multerData();
 
 // ready to server 
 app.listen(PORT, () => {
