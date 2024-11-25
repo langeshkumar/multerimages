@@ -1,2 +1,5 @@
 # hide node modules
 node_modules
+
+# hide dotenv 
+.env
