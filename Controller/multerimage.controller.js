@@ -3,7 +3,7 @@ export const multerGet = (req, res) => {
 }
 
 export const multerPost = (req, res) => {
-    res.json({ message: "This is post method..!" });
+    res.json(req.file);
 }
 
 export const multerPut = (req, res) => {
